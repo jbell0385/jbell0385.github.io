@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hey I'm a math teacher interested in developing apps that will help the educational field.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+My hobbies are cycling.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[jbell0385@gmail.com](mailto:jbell0385@gmail.com)
