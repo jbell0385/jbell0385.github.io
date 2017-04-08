@@ -1,16 +1,15 @@
-#
+m#
 # This file contains configuration flags to customize your site
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Jeremy Bell
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Math educator/ math content developer/ program dabbler
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
-
+avatar: https://lh3.googleusercontent.com/-Vx9PtKC4paw/VzjrxjqjFaI/AAAAAAAArVA/RTJ0aw1eTkY2MIUs7nGqyKMDMAktkROFA/s333-p-rw/jeremy%2Bbell%2Bphoto.jpg
 #
 # Flags below are optional
 #
@@ -26,7 +25,7 @@ footer-links:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: jbell0385
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -41,7 +40,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: http://jeremybelltest.com
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
