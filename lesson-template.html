@@ -11,35 +11,123 @@
   <body>
     <div class="container-flex">
       <div class="card">
-        <div class="card-header bg-primary">
-          Topic 1: Adding and Subtracting
-        </div>
+        <div class="card-header intro-header">Lesson Introduction</div>
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">
-            With supporting text below as a natural lead-in to additional
-            content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <ul class="nav nav-tabs" id="intro-tabs" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="tab-intro-overview"
+                data-toggle="tab"
+                href="#tab-intro-overview-content"
+                role="tab"
+                aria-controls="tab intro overview"
+                aria-selected="true"
+                >Overview</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="tab-intro-prior-knowledge"
+                data-toggle="tab"
+                href="#tab-intro-prior-knowledge-content"
+                role="tab"
+                aria-controls="Prior Knowledge"
+                aria-selected="false"
+                >Prior Knowledge</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content" id="intro-tab-content">
+            <div
+              class="tab-pane fade show active"
+              id="tab-intro-overview-content"
+              role="tabpanel"
+              aria-labelledby="tab intro overview"
+            >
+              <div class="row">
+                <div class="col">
+                  This is where the lesson overview will go.... <br />
+                  This might include a brief overview of the concept and also a
+                  video to introduce the concept to the students.
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="tab-intro-prior-knowledge-content"
+              role="tabpanel"
+              aria-labelledby="Tab intro prior knowledge"
+            >
+              <div class="row">
+                <div class="col">
+                  This tab will have brief review topics for students that they
+                  will need to know to understand this lesson. Definitions and
+                  prior concepts will go in this section.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="card">
-        <div class="card-header">Topic 2: Multiplication and Division</div>
+        <div class="card-header lesson-header">Topic 1: Title of Topic</div>
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">
-            With supporting text below as a natural lead-in to additional
-            content.
-          </p>
-          <button
-            type="button"
-            class="btn btn-lg btn-blue"
-            data-toggle="popover"
-            title="Popover title"
-            data-content="And here's some amazing content. It's very engaging. Right?"
-          >
-            Click to toggle popover
-          </button>
+          <ul class="nav nav-tabs" id="intro-tabs" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="tab-topic01-instruction"
+                data-toggle="tab"
+                href="#tab-topic01-concept01-instruction-content"
+                role="tab"
+                aria-controls="tab topic 01 instruction"
+                aria-selected="true"
+                >Instruction</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="tab-topic01-example"
+                data-toggle="tab"
+                href="#tab-topic01-example-content"
+                role="tab"
+                aria-controls="topic 01 example content"
+                aria-selected="false"
+                >Examples</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content" id="topic01-tab-content">
+            <div
+              class="tab-pane fade show active"
+              id="tab-topic01-concept01-instruction-content"
+              role="tabpanel"
+              aria-labelledby="tab topic 01 instruction"
+            >
+              <div class="row">
+                <div class="col">
+                  This is where the instruction for topic 1 of the lesson would
+                  go.
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="tab-topic01-example-content"
+              role="tabpanel"
+              aria-labelledby="tab topic 01 example content"
+            >
+              <div class="row">
+                <div class="col">
+                  This is where the examples for topic 1 would go so students
+                  can practice their skills before being tested.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
