@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="master.css" />
   </head>
   <body>
+    <!-- Begin Bootstrap Container -->
     <div class="container-flex">
+      <!-- Lesson Intro -->
       <div class="card">
         <div class="card-header intro-header">Lesson Introduction</div>
         <div class="card-body">
@@ -71,6 +73,9 @@
           </div>
         </div>
       </div>
+      <!-- End Lesson Intro -->
+
+      <!-- Topic 1 -->
       <div class="card">
         <div class="card-header lesson-header">Topic 1: Title of Topic</div>
         <div class="card-body">
@@ -109,8 +114,41 @@
             >
               <div class="row">
                 <div class="col">
-                  This is where the instruction for topic 1 of the lesson would
-                  go.
+                  <div
+                    class="embed-responsive embed-responsive-16by9 youtube-container"
+                  >
+                    <iframe
+                      class="embed-responsive-item"
+                      width="448"
+                      height="252"
+                      src="https://www.youtube.com/embed/6Ovw43Dkp44"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <span style="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptas harum aut ex quibusdam iusto, tempore porro. Qui
+                    recusandae consequuntur delectus voluptates deleniti
+                    officiis voluptatibus illum, veniam inventore nesciunt
+                    repellendus architecto?<br />
+                    <img
+                      src="http://www.thepuppyparadise.com/wp-content/uploads/2016/06/puppy-img.jpg"
+                      alt=""
+                      style="width:200px; "
+                    />
+                    <br />
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Temporibus, ad voluptatibus qui nostrum quaerat asperiores
+                    perferendis inventore voluptatum, ab officiis sit ducimus
+                    sapiente distinctio iste, assumenda facere ipsam dolorem
+                    modi. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Temporibus, ad voluptatibus qui nostrum quaerat
+                    asperiores perferendis inventore voluptatum, ab officiis sit
+                    ducimus sapiente distinctio iste, assumenda facere ipsam
+                    dolorem modi.
+                  </span>
                 </div>
               </div>
             </div>
@@ -130,6 +168,71 @@
           </div>
         </div>
       </div>
+      <!-- End Topic 1 -->
+
+      <!-- Topic 2 -->
+      <div class="card">
+        <div class="card-header lesson-header">Topic 2: Title of Topic</div>
+        <div class="card-body">
+          <ul class="nav nav-tabs" id="intro-tabs" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="tab-topic02-instruction"
+                data-toggle="tab"
+                href="#tab-topic02-concept01-instruction-content"
+                role="tab"
+                aria-controls="tab topic 02 instruction"
+                aria-selected="true"
+                >Instruction</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="tab-topic02-example"
+                data-toggle="tab"
+                href="#tab-topic02-example-content"
+                role="tab"
+                aria-controls="topic 02 example content"
+                aria-selected="false"
+                >Examples</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content" id="topic02-tab-content">
+            <div
+              class="tab-pane fade show active"
+              id="tab-topic02-concept01-instruction-content"
+              role="tabpanel"
+              aria-labelledby="tab topic 02 instruction"
+            >
+              <div class="row">
+                <div class="col">
+                  This is where the instruction for topic 2 of the lesson would
+                  go.
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="tab-topic02-example-content"
+              role="tabpanel"
+              aria-labelledby="tab topic 02 example content"
+            >
+              <div class="row">
+                <div class="col">
+                  This is where the examples for topic 2 would go so students
+                  can practice their skills before being tested.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Topic 2 -->
+
+      <!-- End Bootstrap Container -->
     </div>
 
     <script
@@ -148,10 +251,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="bundle.js"></script>
-    <!-- <script>
-      $(function() {
-        $('[data-toggle="popover"]').popover();
-      });
-    </script> -->
+
+    <script></script>
   </body>
 </html>

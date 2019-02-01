@@ -11765,4 +11765,11 @@ h3 {
   color: white;
 }
 
+.youtube-container {
+  max-width: 448px;
+  max-height: 242px;
+  float: right;
+  margin: 0px 0px 0px 1.5em;
+}
+
 /*# sourceMappingURL=master.css.map */
