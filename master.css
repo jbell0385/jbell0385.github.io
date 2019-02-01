@@ -11757,19 +11757,27 @@ h3 {
 
 .nav-link {
   padding: 0.3rem 0.75rem;
+  color: #055e70;
 }
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  background-color: #0786a0;
-  color: white;
+  box-shadow: 2px 0px 2px #b3b3b3;
+  font-weight: bold;
 }
 
-.youtube-container {
+.youtube-container-right {
   max-width: 448px;
   max-height: 242px;
   float: right;
   margin: 0px 0px 0px 1.5em;
+}
+
+.youtube-container-left {
+  max-width: 448px;
+  max-height: 242px;
+  float: left;
+  margin: 0px 1.5em 0px 0px;
 }
 
 /*# sourceMappingURL=master.css.map */
