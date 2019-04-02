@@ -1,5 +1,5 @@
 var CONFIG = {
-				COURSETITLE			: "Captivate E-Learning Course",
+				COURSETITLE			: "Subway Sandwich Formulas",
 				FILENAME			: "index_scorm.html",
 				BGCOLOR				: "#f5f4f1",
 				FPVERSION			: "",
