@@ -11,9 +11,19 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <style>
+      .container {
+        max-width: 1800px;
+      }
+      button .btn {
+        font-size: 0.8em;
+      }
+      button.btn.btn-link {
+        font-size: 0.8em;
+      }
+    </style>
   </head>
   <body>
-    <div class="container"></div>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">Raymond Subway Training</h1>
@@ -23,6 +33,260 @@
         </p>
       </div>
     </div>
+    <div class="container">
+      <div class="accordion" id="lessonAccordian">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link"
+                type="button"
+                data-toggle="collapse"
+                data-target="#storeOverview"
+                aria-expanded="false"
+                aria-controls="storeOverview"
+              >
+                Store Overview
+              </button>
+            </h2>
+          </div>
+
+          <div
+            id="storeOverview"
+            class="collapse"
+            aria-labelledby="headingOne"
+            data-parent="#lessonAccordian"
+          >
+            <div class="card-body">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="embed-responsive-item"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/Tcb1RlzqH3o"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#sandwichFormulas"
+                aria-expanded="false"
+                aria-controls="sandwichFormulas"
+              >
+                Sandwich Formulas
+              </button>
+            </h2>
+          </div>
+          <div
+            id="sandwichFormulas"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#lessonAccordian"
+          >
+            <div class="card-body">
+              <div class="embed-responsive embed-responsive-21by9">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://jbell0385.github.io/subway/sandwich-formulas/"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#pos01"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Point of Sale (POS) 01
+              </button>
+            </h2>
+          </div>
+          <div
+            id="pos01"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#lessonAccordian"
+          >
+            <div class="card-body">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="embed-responsive-item"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/saM6O_OUdOA"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#pos02"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Point of Sale (POS) 02
+              </button>
+            </h2>
+          </div>
+          <div
+            id="pos02"
+            class="collapse"
+            aria-labelledby="headingFour"
+            data-parent="#lessonAccordian"
+          >
+            <div class="card-body">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="embed-responsive-item"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/FEN2JQ1LBgY"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#pos03"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                Point of Sale (POS) 03
+              </button>
+            </h2>
+          </div>
+          <div
+            id="pos03"
+            class="collapse"
+            aria-labelledby="headingFive"
+            data-parent="#lessonAccordian"
+          >
+            <div class="card-body">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="embed-responsive-item"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/xvZF9GdZ42w"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingSix">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#pos04"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                Point of Sale (POS) 04
+              </button>
+            </h2>
+          </div>
+          <div
+            id="pos04"
+            class="collapse"
+            aria-labelledby="headingSix"
+            data-parent="#lessonAccordian"
+          >
+            <div class="card-body">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="embed-responsive-item"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/qh0iXq5V3k4"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingSeven">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#pos05"
+                aria-expanded="false"
+                aria-controls="collapseSeven"
+              >
+                Point of Sale (POS) 05
+              </button>
+            </h2>
+          </div>
+          <div
+            id="pos05"
+            class="collapse"
+            aria-labelledby="headingSeven"
+            data-parent="#lessonAccordian"
+          >
+            <div class="card-body">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="embed-responsive-item"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/xcdH2MVZUec"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
