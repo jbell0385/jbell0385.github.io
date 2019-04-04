@@ -11,15 +11,60 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans"
+      rel="stylesheet"
+    />
     <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+        /* background-color: #fae49d; */
+      }
       .container {
         max-width: 1800px;
       }
-      button .btn {
+      .card-body {
+        background-color: #4c006a;
+        color: white;
+      }
+      .card-header {
+        padding: 5px;
+      }
+      .card-header:hover {
+        background-color: #4c006a;
+      }
+      .card-header:focus {
+        background-color: #4c006a;
+      }
+      .card-header:hover button.btn.btn-link {
         font-size: 0.8em;
+        color: white;
       }
       button.btn.btn-link {
         font-size: 0.8em;
+        color: #0083b6;
+      }
+      button.btn.btn-link:hover {
+        color: #004059;
+        text-decoration: none;
+      }
+      button.btn.btn-link:focus {
+        text-decoration: none;
+      }
+      .header-purple {
+        background-color: #4c006a;
+      }
+      .header-text-white {
+        color: white !important;
+      }
+      .jumbotron {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        background-color: #008938;
+        color: white;
+      }
+      h1.display-4 {
+        font-weight: 900;
       }
     </style>
   </head>
@@ -94,6 +139,15 @@
             data-parent="#lessonAccordian"
           >
             <div class="card-body">
+              <div>
+                <p>
+                  <strong>Instructions:</strong><br />
+                  This exercise will teach you how to make the sandwiches.
+                  First, watch the animations on building the sandwiches. Next,
+                  practice each sandwich by dragging and dropping the
+                  ingredients on to the bread to create the sandwich.
+                </p>
+              </div>
               <div class="embed-responsive embed-responsive-21by9">
                 <iframe
                   class="embed-responsive-item"
@@ -284,6 +338,78 @@
             </div>
           </div>
         </div>
+        <div class="card">
+          <div class="card-header" id="headingEight">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#pos06"
+                aria-expanded="false"
+                aria-controls="collapseEight"
+              >
+                Point of Sale (POS) 06
+              </button>
+            </h2>
+          </div>
+          <div
+            id="pos06"
+            class="collapse"
+            aria-labelledby="headingEight"
+            data-parent="#lessonAccordian"
+          >
+            <div class="card-body">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="embed-responsive-item"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/HT4300fsnsg"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingNine">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#pos07"
+                aria-expanded="false"
+                aria-controls="collapseNine"
+              >
+                Point of Sale (POS) 07
+              </button>
+            </h2>
+          </div>
+          <div
+            id="pos07"
+            class="collapse"
+            aria-labelledby="headingNine"
+            data-parent="#lessonAccordian"
+          >
+            <div class="card-body">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="embed-responsive-item"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/RY4nKBov8js"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -302,5 +428,33 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      var cardHeaders = document.querySelectorAll(".card-header");
+      var cardLinks = document.querySelectorAll(".btn.btn-link");
+      cardLinks.forEach(link => {
+        link.classList.remove("header-text-white");
+        link.addEventListener("click", e => {
+          removeWhiteAndPurple();
+          if (e.target.classList.contains("header-text-white")) {
+            e.target.classList.remove("header-text-white");
+            e.target.parentElement.parentElement.classList.remove(
+              "header-purple"
+            );
+          } else {
+            e.target.classList.add("header-text-white");
+            e.target.parentElement.parentElement.classList.add("header-purple");
+          }
+        });
+      });
+      function removeWhiteAndPurple() {
+        cardHeaders.forEach(header => {
+          header.classList.remove("header-purple");
+        });
+        cardLinks.forEach(link => {
+          link.classList.remove("header-text-white");
+        });
+      }
+    </script>
   </body>
 </html>
