@@ -1,59 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Origins Of Algebra</title>
-    <link rel=icon type="image/png" href=/favicon.png>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="container" style="width:800px;">
-      <div class="card">
-        <img
-          src="https://thenypost.files.wordpress.com/2019/01/190122-dog-wag-silence.jpg?quality=90&strip=all&w=618&h=410&crop=1"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+<html>
+
+<head>
+    <title>
+        Canvas Geometry Template Page
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://storage.googleapis.com/jeremy-bell-moodle/assets/css/app.css">
+</head>
+
+<body>
+    <!--=======================================
+        =            Start of Template            =
+        ========================================-->
+    <!-- In Canvas, remove the "container" class -->
+    <div class="container-fluid jeremy-code">
+       
+        <!--========================================
+            =            Objectives Snippet            =
+            =========================================-->
+        <div class="card">
+            <div class="card-header panel-heading-lt">
+                <i class="fa fa-bullseye card-header-icon"></i> Objectives
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <ol>
+                        <li>
+                            I can explain where Algebra came from.
+                        </li>
+                        <li>
+                            I can explain why Algebra was created.
+                        </li>
+                    </ol>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+        <!--====  End of Objectives Snippet  ====-->
+        <!--========================================
+            =            Prior Knowledge Snippet       =
+            =========================================-->
+        <div class="card">
+            <div class="card-header panel-heading-pk">
+                <i class="fa fa-puzzle-piece card-header-icon" aria-hidden="true"></i> Prior Knowledge
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <ol>
+                        <!--To add more list items, copy and paste one below. You must change the data target -->
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#timeLine">
+                                    Timeline
+                                </a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#middleEast">
+                                    Middle East
+                                </a>
+                        </li>
+                    </ol>
+                    <!-- Modal 1 -->
+                    <!--You must change the id below to match the data-target above -->
+                    <div class="modal fade" id="timeLine" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="">
+                                        Timeline
+                                    </h5>
+                                    <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">
+                                                &times;
+                                            </span>
+                                    </a>
+                                </div>
+                                <!--This is where you insert content for the modal -->
+                                <div class="modal-body">
+                                    <p>A timeline is a way to display a list of events in chronological order.</p>
+                                    <p>An example of a timeline is shown below:</p>
+                                    <div class="img-800">
+                                      <img src="https://storage.googleapis.com/jeremy-bell-moodle/algebra/algebra-foundations/origins-of-algebra/timeline.jpg" alt="Example of a timeline">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#" class="btn btn-secondary" data-dismiss="modal">
+                                            Close
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Modal 1-->
+                    <!-- Modal 2 -->
+                    <!--You must change the id below to match the data-target above -->
+                    <div class="modal fade" id="middleEast" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="">
+                                        Middle East
+                                    </h5>
+                                    <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">
+                                                &times;
+                                            </span>
+                                    </a>
+                                </div>
+                                <!--This is where you insert content for the modal -->
+                                <div class="modal-body">
+                                    <p>This lesson will reference the Middle East.  The Middle East is a region between north-eastern Africa and western Asia.</p>
+                                    <div class="img-800">
+                                    <img src="https://storage.googleapis.com/jeremy-bell-moodle/algebra/algebra-foundations/origins-of-algebra/middle-east.jpg" alt="">
+                                    By TownDown
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#" class="btn btn-secondary" data-dismiss="modal">
+                                            Close
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Modal 2-->
+                </div>
+            </div>
+        </div>
+        <!--====  End of Prior Knowledge Snippet  ====-->
+        <!--========================================
+            =            Concept Block Snippet         =
+            =========================================-->
+        <div class="card">
+            <div class="card-header panel-heading">
+                <i class="fa fa-book card-header-icon" aria-hidden="true"></i> Concept #1
+            </div>
+            <div class="card-body">
+                <div class="tabs-container">
+                    <nav>
+                        <div class="nav nav-tabs" id="" role="tablist">
+                            <!-- Add navigation tabs here. Make sure to give it a unique ID and the href matches the id below-->
+                            <a class="nav-item nav-link active" id="tab01-tab" data-toggle="tab" href="#tab01" role="tab" aria-controls="tab01" aria-selected="true">
+                                    Tab 01
+                                </a>
+                            <a class="nav-item nav-link" id="tab02-tab" data-toggle="tab" href="#tab02" role="tab" aria-controls="tab02" aria-selected="false">
+                                    Tab 02
+                                </a>
+                            <a class="nav-item nav-link" id="tab03-tab" data-toggle="tab" href="#tab03" role="tab" aria-controls="tab03" aria-selected="false">
+                                    Tab 03
+                                </a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="">
+                        <!-- Make sure all id's match the href's above -->
+                        <div class="tab-pane fade show active" id="tab01" role="tabpanel" aria-labelledby="tab01-tab">
+                            Tab 1 Content
+                        </div>
+                        <div class="tab-pane fade" id="tab02" role="tabpanel" aria-labelledby="tab02-tab">
+                            Tab 2 Content
+                        </div>
+                        <div class="tab-pane fade" id="tab03" role="tabpanel" aria-labelledby="tab03-tab">
+                            Tab 3 Content
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====  End of Concept Block Snippet  ====-->
+        <!--====  End of Start of Template  ====-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+       
+</body>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-      crossorigin="anonymous"
-    ></script>
-
-    <script>
-      $(function() {
-        $(".example-popover").popover({
-          container: "body"
-        });
-      });
-    </script>
-  </body>
 </html>
